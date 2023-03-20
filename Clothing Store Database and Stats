@@ -1,0 +1,21 @@
+--create a clothing store database
+
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, aisle INTEGER, material TEXT);
+
+INSERT into clothing VALUES (1, 'T-Shirt', 5, 1, 'cotton');
+INSERT into clothing values (2, 'Shorts', 5, 2, 'denim');
+INSERT into clothing values (3, 'Pants', 10, 2, 'denim');
+INSERT into clothing values (4, 'Belt', 3, 2, 'leather');
+INSERT into clothing values (5, 'Pajama sets', 10, 3, 'silk');
+INSERT into clothing values (6, 'Slippers', 5, 3, 'cotton');
+INSERT into clothing values (7, 'Long Sleeve Shirt', 5, 1, 'cotton');
+INSERT into clothing values (8, 'Socks', 3, 3, 'cotton');
+INSERT into clothing values (9, 'Skirt', 10, 2, 'polyester');
+INSERT into clothing values (10, 'Leggings', 10, 2, 'cotton');
+INSERT into clothing values (11, 'Dress', 7, 2, 'polyester');
+INSERT into clothing values (12, 'Tights', 5, 2, 'cotton');
+
+--display the database ordered by price
+SELECT * FROM clothing
+ORDER BY price
