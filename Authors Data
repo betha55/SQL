@@ -1,0 +1,22 @@
+/* Create table about the people and what they do here */
+CREATE TABLE authors
+    (id INTEGER PRIMARY KEY,
+    name TEXT,
+    book TEXT);
+ INSERT INTO authors VALUES (1, "Sarah Maas", "ACOTAR");
+ INSERT INTO authors VALUES (2, "Brit Benson", "The Love of My Next Life");
+ INSERT INTO authors VALUES (3, "S.T. Abby", "The Risk");
+ 
+CREATE TABLE genre
+    (id INTEGER PRIMARY KEY,
+    category TEXT);
+INSERT INTO genre VALUES (1, "Fantasy");
+INSERT INTO genre VALUES (2, "Romance");
+INSERT INTO genre VALUES (3, "Thriller");
+
+SELECT * FROM authors;
+
+SELECT authors.name, authors.book, genre.category
+FROM authors
+JOIN genre
+ON authors.id=genre.id;
